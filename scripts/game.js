@@ -3,8 +3,8 @@
 let app = new PIXI.Application({ width: 640, height: 360 });
 document.body.appendChild(app.view);
 //const texturePromise = PIXI.Assets.load('https://pixijs.com/assets/bunny.png');
-//const texturePromise = PIXI.Assets.load('assets/BaboonLogo.png');
-const texturePromise = PIXI.Assets.load('./assets/bunny.png');
+const texturePromise = PIXI.Assets.load('assets/BaboonLogo.png');
+//const texturePromise = PIXI.Assets.load('./assets/bunny.png');
 texturePromise.then((resolvedTexture) =>
 {
     // create a new Sprite from the resolved loaded Texture
