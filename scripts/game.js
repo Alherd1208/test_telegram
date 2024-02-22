@@ -3,7 +3,8 @@
 const width = window.innerWidth;
 let height = Telegram.WebApp.viewportStableHeight;
 let app = new PIXI.Application({ width: width * 0.9, height: height});
-document.body.appendChild(app.view);
+document.getElementById("game").appendChild(app.view);
+//document.game.appendChild(app.view);
 //const texturePromise = PIXI.Assets.load('https://pixijs.com/assets/bunny.png');
 const texturePromise = PIXI.Assets.load('assets/BaboonLogo.png');
 //const texturePromise = PIXI.Assets.load('./assets/bunny.png');
