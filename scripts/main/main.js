@@ -7,7 +7,8 @@
 const moneyElem = document.getElementById("money");
 
 console.log(Telegram.WebApp.initData);
-moneyElem.innerHTML = Te.egram.WebApp.initData;
+console.log("qwe");
+moneyElem.innerHTML = Telegram.WebApp.initData;
 // ToDo: getBoons amount
 //let boonAmount = 0.01;
 // ToDo: getBoons per second
