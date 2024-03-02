@@ -64,42 +64,29 @@
 </head>
 
 <body>
-    <div id="main">
+    <div id="main" style="margin-top:10px">
         <div align="center">
             <a href="https://baboon.bio/"><img width="48" src="./assets/BaboonLogo.png" alt="logo of telegram web apps"></a>
         </div>
         <div id="main-header">
-            <div style="display:inline-block">
-                <h1 align="center">Lunar Bananas v3</h1>
+            <div>
+                <h1 align="center">Lunar Bananas</h1>
             </div>
-            <div style="display:inline-block;">
-            <h2 id="money" align="center">0.0000</h2>
+            <div>
+            <h2 id="money" align="center">[development in progress]</h2>
             </div>
         </div>
-        <!-- <div id="game" align="center"></div> -->
-        <button onclick="switchPage('profile')">Go to profile</button>
-    </div>
-    <div id="profile" style="display:none">
-        <hi align="center">Profile</hi>
-        <button onclick="switchPage('main')">Go to main</button>
     </div>
     <div id="viewport"></div>
     <div id="viewport-params-size"></div>
     <div id="viewport-params-expand"></div>
-
-    <script>
-        function switchPage(pageId) {
-            document.getElementById('main').style.display = pageId == 'main' ? 'block' : 'none';
-            document.getElementById('profile').style.display = pageId == 'profile'? 'block' : 'none';
-        }
-    </script>
 
     <!-- telegram core -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <!-- index js -->
     <script src="./script/index.js"></script>
     <!-- main page -->
-    <script src="./scripts/main/main.js"></script>
+    <!-- <script src="./scripts/main/main.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
     <script>eruda.init();</script>
 </body>
